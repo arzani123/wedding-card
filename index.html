@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <title>کارت من</title>
+        <style>
+            body{
+                background-color: #fff0f5;
+                color: #333;
+                font-family: Tahoma, sans-serif;
+                text-align: center;
+                direction: rtl;
+            }
+
+            .card{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+            
+                max-width: 736px;
+                aspect-ratio: 736 / 1031;
+                background-image: url(img/bg1.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: top center;
+                margin: auto;
+                padding: 10% 5%;
+                box-sizing: border-box;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+            .title h1{
+                color: #c2185b;
+                font-size: clamp(30px, 5vw, 40px);
+                animation: fadeUp 1s ease-out forwards;
+            }
+
+            .poem p , .info p{
+                font-size: clamp(16px, 3vw,20px);
+                margin-bottom: 20px 0;
+                line-height: 1.8;
+            }
+            .info p{
+                margin-bottom: 40px;
+            }
+
+            .location a{
+                display: inline-block;
+                margin-top: 10px;
+                color: #fff;
+                background-color: #d81b60;
+                padding: 10px 20px;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+
+            .location-button{
+                display: inline-block;
+                background-color: white;
+                color: white;
+                text-decoration: none;
+                padding: 12px 24px;
+                font-size: clamp(14px, 3vw, 18px);
+                border-radius: 10px ;
+                margin-top: 30px;
+                transition: background-color 0.3s ease;
+            }
+
+            .location-button:hover{
+                background-color: #ab1457;
+            }
+
+            @keyframes fadeUp{
+                from{
+                    opacity: 0;
+                    transform: translateY(-40px);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @media(max-width:480px){
+                .card{
+                    padding: 15% 6%;
+                }
+
+                h1{
+                    font-size: 28%;
+                }
+
+                p, span, a{
+                    font-size: 18px;
+                }
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="title">
+                <h1>انیسه و کیومرث</h1>
+            </div>
+            <br>
+
+            <div class="poem">
+                <p>به سنت عشق گرد هم آمدیم</p>
+                <p>آنجا که دوست داشتن تنها کلام زندگیست</p>
+            </div>
+            <br>
+            <div class="info">
+                <p>تاریخ:20 تیرماه 1404
+                    <br>
+                    ساعت:19 تا پاسی از شب
+                </p>
+            </div>
+
+            <div class="location">
+                <p>باغ تالار الماس</p>
+                <a href="https://www.google.com/maps/place/%D8%A8%D8%A7%D8%BA+%D8%AA%D8%A7%D9%84%D8%A7%D8%B1+%D8%A7%D9%84%D9%85%D8%A7%D8%B3%E2%80%AD/@35.7538763,51.0463671,17z/data=!3m1!4b1!4m6!3m5!1s0x3f8deb701e50fa83:0xe914a9a6e6b68089!8m2!3d35.7538763!4d51.0437922!16s%2Fg%2F11ddxtfdkr?entry=ttu&g_ep=EgoyMDI1MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="location-button">
+                    لوکیشن</a>
+            </div>
+        </div>
+        
+    </body>
+
+</html>
